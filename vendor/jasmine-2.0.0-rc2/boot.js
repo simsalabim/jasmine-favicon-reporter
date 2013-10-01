@@ -83,7 +83,7 @@
 
   env.addReporter(htmlReporter);
 
-  env.addReporter(new JasmineFaviconReporter());
+  env.addReporter(new JasmineFaviconReporter(jasmineInterface.jsApiReporter));
 
   var specFilter = new jasmine.HtmlSpecFilter({
     filterString: function() { return queryString.getParam("spec"); }

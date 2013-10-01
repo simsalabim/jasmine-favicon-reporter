@@ -10,7 +10,7 @@ describe("New JasmineFaviconReporter", function() {
         return { badge: badge };
       });
       jsApiReporter = new j$.JsApiReporter({});
-      jasmineFaviconReporter = new JasmineFaviconReporter({ jsApiReporter: jsApiReporter });
+      jasmineFaviconReporter = new JasmineFaviconReporter(jsApiReporter);
     });
 
     it("shows count of failed tests in favicon", function() {
@@ -65,7 +65,7 @@ describe("New JasmineFaviconReporter", function() {
     beforeEach(function() {
       window.Favico = null;
       jsApiReporter = new j$.JsApiReporter({});
-      jasmineFaviconReporter = new JasmineFaviconReporter({ jsApiReporter: jsApiReporter });
+      jasmineFaviconReporter = new JasmineFaviconReporter(jsApiReporter);
     });
 
     it("does not try to change favicon even if some tests failed", function() {

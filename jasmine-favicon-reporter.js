@@ -1,7 +1,4 @@
-JasmineFaviconReporter = function(options) {
-  options = options || {};
-
-  var jsApiReporter = options.jsApiReporter || window.jsApiReporter;
+JasmineFaviconReporter = function(jsApiReporter) {
 
   this.jasmineDone = function() {
     if (this.failedCount() > 0 && typeof Favico === "function") {
