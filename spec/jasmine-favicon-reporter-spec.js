@@ -31,7 +31,6 @@ describe("New JasmineFaviconReporter", function() {
       };
 
       jsApiReporter.specDone(specResult);
-      jsApiReporter.jasmineDone({});
       jasmineFaviconReporter.jasmineDone({});
       expect(jasmineFaviconReporter.favicon().badge).toHaveBeenCalledWith(1);
     });
@@ -54,7 +53,6 @@ describe("New JasmineFaviconReporter", function() {
       };
 
       jsApiReporter.specDone(specResult);
-      jsApiReporter.jasmineDone({});
       jasmineFaviconReporter.jasmineDone({});
       expect(jasmineFaviconReporter.favicon().badge).not.toHaveBeenCalled();
     });
@@ -86,7 +84,6 @@ describe("New JasmineFaviconReporter", function() {
       };
 
       jsApiReporter.specDone(specResult);
-      jsApiReporter.jasmineDone({});
       jasmineFaviconReporter.jasmineDone({});
       expect(jasmineFaviconReporter.changeFavicon).not.toHaveBeenCalled();
     });

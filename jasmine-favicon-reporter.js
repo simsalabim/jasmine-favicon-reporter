@@ -1,7 +1,7 @@
 JasmineFaviconReporter = function(jsApiReporter) {
 
   this.jasmineDone = function() {
-    if (this.failedCount() > 0 && typeof Favico === "function") {
+    if (typeof Favico === "function" && this.failedCount() > 0) {
       this.changeFavicon(this.failedCount());
     }
   };
@@ -16,13 +16,17 @@ JasmineFaviconReporter = function(jsApiReporter) {
   };
 
   this.failedCount = function() {
+    this.cachedFailedCount = this.cachedFailedCount || this.calculateFailedCount();
+    return this.cachedFailedCount;
+  };
+
+  this.calculateFailedCount = function() {
     failedCount = 0;
     jsApiReporter.specs().forEach(function(spec){
       if (spec.status == "failed") {
         failedCount++;
       }
     });
-    this.cachedFailedCount = this.cachedFailedCount || failedCount;
-    return this.cachedFailedCount;
-  }
+    return failedCount;
+  };
 };
