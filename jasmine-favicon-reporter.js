@@ -1,3 +1,10 @@
+/**
+ * Jasmine reporter that shows count of *RED* tests in favicon.
+ *
+ * @author Alexander Kaupanin <kaupanin@gmail.com>
+ * @version 0.0.001
+ */
+
 JasmineFaviconReporter = function() {
   this.failedCount = 0;
 

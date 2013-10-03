@@ -1,0 +1,26 @@
+{
+  "name": "jasmine-favicon-reporter",
+  "main": "jasmine-favicon-reporter.js",
+  "version": "0.0.001",
+  "homepage": "https://github.com/simsalabim/jasmine-favicon-reporter",
+  "authors": [
+    "Alexander Kaupanin <kaupanin@gmail.com>"
+  ],
+  "description": "Jasmine reporter that shows count of *RED* tests in favicon.",
+  "keywords": [
+    "jasmine",
+    "reporter",
+    "favicon",
+    "bdd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "spec"
+  ],
+  "dependencies": {
+    "favico.js": "~0.2.1"
+  }
+}
