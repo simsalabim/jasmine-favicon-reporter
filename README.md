@@ -15,7 +15,7 @@ Include `favico.js` and the reporter prior to `boot.js`
 and specify to use it in `boot.js`
 ```javascript
 // vendor/jasmine/boot.js
-env.addReporter(new JasmineFaviconReporter(jasmineInterface.jsApiReporter));
+env.addReporter(new JasmineFaviconReporter());
 ```
 
 That's it.
