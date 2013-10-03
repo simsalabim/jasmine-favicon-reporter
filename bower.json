@@ -18,7 +18,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "spec"
+    "spec",
+    "tests"
   ],
   "dependencies": {
     "favico.js": "~0.2.1"
