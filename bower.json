@@ -1,8 +1,8 @@
 {
   "name": "jasmine-favicon-reporter",
   "main": "jasmine-favicon-reporter.js",
-  "version": "0.0.001",
-  "homepage": "https://github.com/simsalabim/jasmine-favicon-reporter",
+  "version": "0.0.002",
+  "homepage": "http://simsalabim.github.io/jasmine-favicon-reporter",
   "authors": [
     "Alexander Kaupanin <kaupanin@gmail.com>"
   ],

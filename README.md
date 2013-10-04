@@ -1,6 +1,8 @@
 # Jasmine Favicon Reporter
 
-Jasmine reporter that shows count of *RED* tests in favicon.
+Jasmine reporter that shows count of `RED` tests in favicon.
+
+Tests and demo available [here](http://simsalabim.github.io/jasmine-favicon-reporter)
 
 # How to use
 
