@@ -18,6 +18,7 @@
     <style type="text/css">
         body {
           font-family: Verdana, Arial, sans-serif;
+          margin: 0;
         }
         .demo {
           text-decoration: underline;
@@ -35,8 +36,16 @@
           padding: 50px 0;
         }
         .b-failing-suite iframe {
-          width: 100%;
+          width: 99%;
           height: 200px;
+          margin-top: 20px;
+        }
+        .b-fork-me {
+          border: 0 none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 1050;
         }
     </style>
     <script type="text/javascript">
@@ -51,7 +60,12 @@
 </head>
 <body>
   <div class="l-demo">
-    <div class="b-promo">Click <span class="demo">here</span> to see a demo with a failing spec.</div>
+    <div class="b-promo">
+      Click <span class="demo">here</span> to see a demo with a failing spec.
+      <a href="http://github.com/simsalabim/jasmine-favicon-reporter">
+        <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" class="b-fork-me" alt="Forkme_right_red_aa0000" />
+      </a>
+    </div>
     <div class="b-failing-suite">
       <iframe src="" class="hidden"></iframe>
     </div>
