@@ -1,0 +1,25 @@
+{
+  "name": "jasmine-favicon-reporter",
+  "version": "1.0.0",
+  "description": "Jasmine reporter that shows count of *RED* tests in favicon.",
+  "main": "jasmine-favicon-reporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simsalabim/jasmine-favicon-reporter.git"
+  },
+  "keywords": [
+    "jasmine",
+    "reporter",
+    "favicon",
+    "bdd"
+  ],
+  "author": "Alexander Kaupanin <kaupanin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simsalabim/jasmine-favicon-reporter/issues"
+  },
+  "homepage": "http://simsalabim.github.io/jasmine-favicon-reporter"
+}
